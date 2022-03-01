@@ -1,0 +1,8 @@
+<navbar [(isMenu)]="isMenu"></navbar>
+<show-menu *ngIf="isMenu"></show-menu>
+<header id="homepage"></header>
+<div class="app-grid">
+    <dishes></dishes>
+    <view-menu [(isMenu)]="isMenu"></view-menu>
+    <contact id="contact"></contact>
+</div>

@@ -1,0 +1,95 @@
+.header{
+    overflow: hidden;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header > div{
+    margin-bottom: 10px;
+}
+
+.header__title1,
+.header__title2,
+.header__title3,
+.header__title4{
+    font-size: 15vw;
+    z-index: 2;
+}
+
+.header__title5,
+.header__title6{
+    font-size: 4.375vw;
+    z-index: 2;
+}
+
+.header__title7{
+    font-size: 3.438vw;
+    z-index: 2;
+}
+
+.header__bg{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.header__bg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tablet{
+    display: none;
+}
+
+@media screen and (min-width:740px) {
+    .header{
+        height: calc(50vh - 80px);
+    }
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: block
+    }
+    .header__title1,
+    .header__title2,
+    .header__title3,
+    .header__title4{
+        font-size: 6.486vw;
+        z-index: 2;
+    }
+    .header__title5,
+    .header__title6{
+        font-size: 1.892vw;
+        z-index: 2;
+    }
+    .header__title7{
+        font-size: 1.486vw;
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .header__title1,
+    .header__title2,
+    .header__title3,
+    .header__title4{
+        font-size: 3vw;
+    }
+    .header__title5,
+    .header__title6{
+        font-size: 1vw;
+    }
+    .header__title7{
+        font-size: 0.6vw;
+    }
+}

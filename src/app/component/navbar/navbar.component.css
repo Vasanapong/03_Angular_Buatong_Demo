@@ -1,0 +1,40 @@
+.navbar{
+    height: 80px;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background-color: #111111;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar__logo{
+    margin: auto 0px;
+}
+
+.navbar__logo > img{
+    width: 156px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 6vw;
+}
+
+.navbar__menu > img{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1280px) {
+    .navbar__menu{
+        display: none;
+    }
+}
